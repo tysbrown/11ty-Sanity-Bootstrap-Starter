@@ -1,0 +1,64 @@
+// Over-ride file for Bootstrap Sass used to create custom Bootstrap theme without modifying core files
+
+// Carousel
+.carousel-indicators {
+  align-items: end;  // Fixes issue with first indicator being misaligned with the rest
+}
+
+// Color System
+$theme-colors: (
+  "primary":    #728565,
+  "secondary":  #FCF8DB
+  //"success":
+  //"info":
+  //"warning":
+  //"danger":
+  //"light":
+  //"dark":
+);
+
+// Grid Breakpoints + Max Container Widths
+$grid-breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px,
+  xxl: 1440px
+);
+
+$container-max-widths: (
+  sm: 540px,
+  md: 720px,
+  lg: 960px,
+  xl: 1140px,
+  xxl: 1400px
+);
+
+// Spacing
+$spacer: 1rem;
+$spacers: ();
+$spacers: map-merge(
+    (
+      0: 0,
+      1: ($spacer * .25),
+      2: ($spacer * .5),
+      3: $spacer,
+      4: ($spacer * 1.5),
+      5: ($spacer * 3),
+      6: ($spacer * 6)
+    ),
+    $spacers
+);
+
+// Typography
+$font-family-sans-serif:  fira-sans-compressed, sans-serif;
+$font-family-base:  $font-family-sans-serif !default;
+
+// Nav Bar
+$navbar-dark-color: rgba(#FCF8DB, 0.5);
+$navbar-dark-hover-color: rgba(#FCF8DB, 0.75);
+$navbar-dark-active-color: #FCF8DB;
+
+// Imports entire bootstrap framework
+@import "../web/node_modules/bootstrap/scss/bootstrap";

@@ -1,0 +1,12 @@
+---
+layout: layouts/home.njk
+eleventyNavigation:
+  key: About
+  order: 2
+---
+<h1>{{ about.title }}</h1>
+
+{{ about.body | markdownify | safe }}
+
+<img src="{% imageUrlFor about.image1, 400 %}" alt="{{ about.image1.alt }}">
+
