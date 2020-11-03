@@ -4,7 +4,7 @@
     "name": "Blog with Eleventy"
   },
   "api": {
-    "projectId": "fyup3w96",
+    "projectId": "PASTE-PROJECT-ID-HERE",
     "dataset": "production"
   },
   "plugins": [
