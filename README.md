@@ -17,11 +17,3 @@ You'll need to paste your Sanity Studio's `projectId` and `dataset` (available i
 To install dependencies run `npm install` on the root directory.
 
 To develop locally, run `npm run dev` on the root directory. The repo consists of 2 main directories: /studio houses the Sanity Studio, /web houses the 11ty frontend. You can run `npm run dev` on either of these directories to set up a local dev environment with one and not the other.
-
-## Deploy
-To deploy both the frontend and studio to Netlify, run:
-
-```sh
-netlify init
-netlify deploy
-```
