@@ -16,4 +16,4 @@ You'll need to paste your Sanity Studio's `projectId` and `dataset` (available i
 
 To install dependencies run `npm install` on the root directory.
 
-To develop locally, run `npm run dev` on the root directory. The repo consists of 2 main directories: /studio houses the Sanity Studio, /web houses the 11ty frontend. You can run `npm run dev` on either of these directories to set up a local dev environment with one and not the other.
+To develop locally, run `npm run dev` on the root directory. The starter uses Lerna to run both the frontend and the studio simultaneously for local development. You can also run `npm run dev` on either the /web or /studio directories to run one without the other.
